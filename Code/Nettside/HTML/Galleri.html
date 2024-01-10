@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Basilisk</title>
+        <link rel="icon" type="Image/x-icon" href="Images/Basilisk.svg">
+        <link href="CSS_Meny/style.css" rel="stylesheet" type="text/css"> 
+        <link id="darktheme" href="CSS_Meny/styledark.css" rel="stylesheet" type="text/css">  
+        <script src="Darkmode.js"></script>
+    </head>
+<body>
+  
+  <!-- meny bar -->
+
+    <nav>
+        <a href="Index.html">
+            <img alt="Basilisk logo" src="Images/Basilisk.svg" width="75" height="auto">
+        <a href="Index.html">Home</a>
+        <a href="About_me.html">About me</a>
+        <a href="designmanual.html">Designmanual</a>
+        <a href="Galleri.html">Gallery</a>
+        <div class="animation start-home"></div>
+        <img src="Images/light.svg" onclick="Darkmode()" id="toggledarkmode" alt="Toggle dark mode"></img>
+    </nav>
+<br>
+
+<!-- galleri tittel og galleri meny -->
+
+    <h1>Gallery</h1>
+    <div class="galleri">
+            <a href="Galleri.html" class="galleri">Gallery</a>
+            <a href="Galleri_IT.html" class="galleri">IT og drift</a>
+            <a href="Galleri_Medie.html" class="galleri">Mediaproduction</a>
+          </div>
+          <p>Denne nettsiden er bringet av Alexander Mofre.</p>
+<br><br><br>
+
+<!-- Oppdrag -->
+
+<div class="oppdrag_container">
+
+  <div id="Oppdrag1">
+    <img id="image_thumbnail" src= "Oppdrag/Oppdrag_1/Oppdrag_1_Thumbnail.jpg">
+  </div>    
+
+    <div class="row">
+        <div class="column">
+          <img id="image_thumbnail" src= "Oppdrag/Oppdrag_2/Oppdrag_2_Thumbnail.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+  
+          <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+            <img src= "Oppdrag/Oppdrag_2/Side1.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+            <img src= "Oppdrag/Oppdrag_2/Side2.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+            <img src= "Oppdrag/Oppdrag_2/Side3.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+            <img src= "Oppdrag/Oppdrag_2/Side4.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+            <img src= "Oppdrag/Oppdrag_2/Side5.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 7</div>
+            <img src= "Oppdrag/Oppdrag_2/Side6.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 7</div>
+            <img src= "Oppdrag/Oppdrag_2/Side7.jpg" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Oppdrag/Oppdrag_2/Side1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Side1">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Oppdrag/Oppdrag_2/Side2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Side2">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Oppdrag/Oppdrag_2/Side3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Side3">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Oppdrag/Oppdrag_2/Side4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Side4">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Oppdrag/Oppdrag_2/Side5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Side5">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Oppdrag/Oppdrag_2/Side6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Side6">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="Oppdrag/Oppdrag_2/Side7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Side7">
+          </div>
+        </div>
+      </div>
+
+      <div id="Oppdrag3">
+        <img id="image_thumbnail" src= "Oppdrag/Oppdrag_3/Oppdrag_3_Thumbnail.jpg">
+      </div>    
+</div>
+    <script src="Galleri.js"></script>   
+    </body>
+    </html>
+        

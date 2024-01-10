@@ -1,0 +1,684 @@
+/* Body */
+
+h1{
+	font-family: cascadia code;
+	font-weight: bold;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	margin: 0;
+	background-color: white;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/* Nav menyen */
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #252627;
+	color: white;
+	padding: 10px;
+}
+
+#navbar-logo {
+	width: 100px;
+	height: auto;
+}
+
+#navbar-icon {
+	width: 70px;
+	height: auto;
+	margin-right: 15px;
+}
+
+.navbar-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
+	border:3px solid #818181;
+	border-radius: 10px;
+	margin: 0;
+	padding: 0.4%;
+}
+
+.navbar-menu li {
+	margin-right: 20px;
+}
+
+.navbar-menu li a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+	background-color: white;
+	color: #252627;
+}
+
+/* Search bar */
+.navbar-search {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.navbar-search input[type="text"] {
+	border: none;
+	padding: 5px;
+	font-size: 16px;
+	width: 450px;
+	margin-right: 5px;
+}
+
+.navbar-search button {
+	background-color: #252627;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	.navbar-menu {
+		margin-top: 10px;
+	}
+
+	.navbar-menu li {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+}
+
+/* Bunn nav */
+
+.bunn-Nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #252627;
+	color: #818181;
+	margin-top: 2%;
+	padding: 0;
+}
+.Links{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 1080px;
+}
+.site-Links{
+	display: flex;
+	flex-direction: column;
+}
+.site-Links a{
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	font-size: 18px;
+	color: #818181;
+	padding-top: 5%;
+	
+}
+.site-Links a:hover{
+	color: white;
+}
+#copyright{
+	margin-top: 3%;
+	text-decoration: none;
+	font-family: cascadia code;
+	font-weight: bold;
+}
+#link-Tittel{
+	font-family: cascadia code;
+	font-size: 25px;
+}
+
+/* Index siden */
+
+#indexProdukter{
+	margin: 3%;
+	font-size: 35px;
+}
+/* Image slider */
+
+* {
+	box-sizing: border-box;
+}
+
+.mySlides {
+	display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 700px;
+	position: relative;
+	margin: auto;
+	margin-top: 50px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	background-color: #252627;
+	opacity: 65%;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: black;
+	opacity: 100%;
+}
+
+/* Caption text */
+.text {
+	color: white;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #D3D4D9;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #818181;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+	.prev,
+	.next,
+	.text {
+		font-size: 11px;
+	}
+}
+
+/* index Produkter */
+
+.produkt-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #D3D4D9;
+}
+
+.produkt {
+	width: 250px;
+	height: 300px;
+	background-size: contain;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 10px;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	background-color: white;
+}
+
+.produkt p {
+	color: black;
+	font-size: 25px;
+	background-color: white;
+	width: fit-content;
+	padding: 5px;
+	font-family: Cascadia code;
+	font-weight: bold;
+}
+
+.produkt h1 {
+	color: black;
+	font-size: 25px;
+	background-color: white;
+	width: fit-content;
+	padding: 5px;
+	margin-top: 64%;
+	font-weight: bold;
+}
+/* .produkt:hover{
+	background-color:#717171;
+} */
+
+/* Produktsiden */
+
+.produkt-side {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	padding: 15px;
+	margin: 25px;
+}
+.ProduktBilde-container{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #D3D4D9;
+}
+#produktBilde {
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 70%;
+	margin-top: 5%;
+}
+
+.produktInnhold {
+	display: flex;
+	flex-direction: column;
+	border: 5px solid #818181;
+}
+
+
+.produktInformasjon{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 3px solid black;
+}
+#produktNavn {
+	font-size: 30px;
+	align-self: flex-start;
+	font-family: Cascadia code;
+	font-weight: bold;
+	margin-left: 1%;
+	border-bottom: 3px solid #D3D4D9;
+}
+
+#produktInfo {
+	width: 350px;
+	margin: 30px;
+	font-size: 25px;
+}
+
+.pris {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 2%;
+}
+
+#produktPris {
+	font-size: 50px;
+	font-family: Cascadia code;
+	font-weight: bold;
+}
+
+#handleKnapp {
+	background-color: #ff0022;
+	color: white;
+	border: 3px solid #bb0a21;
+	border-radius: 10px;
+	font-size: 20px;
+	text-align: center;
+	width: 200px;
+	height: 50px;
+	cursor: pointer;
+}
+
+#handleKnapp:hover {
+	background-color: #bb0a21;
+}
+
+/* Designmanual */
+
+.Designmanual {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 5px solid #D3D4D9;
+	background-color: #D3D4D9;
+}
+.DesignInnhold{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-top: 3%;
+	border: 5px solid black;
+	background-color: white;
+
+}
+
+#DesignTittel {
+	font-size: 32px;
+	font-family: Cascadia code;
+	font-weight: bold;
+	align-self: first baseline;
+	margin-left: 2.5%;
+}
+
+.logoContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#forklaring {
+	width: 70%;
+	border: 3px solid black;
+	margin-top: 3%;
+	margin-right: 4.8%;
+}
+.Font-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: 7%;
+	
+}
+.font{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 50%;
+	border: 3px solid #000000;
+}
+
+
+#Font-tittel {
+	font-size: 32px;
+	font-weight: bold;
+	align-self: first baseline;
+	margin-right: 8.5%
+}
+
+#tittel{
+	margin-left: 5%;
+}
+#Font-tekst {
+	font-size: 17px;
+	margin-left: 5%;
+}
+.fargeContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.FargeText-container{
+	margin-left: 6%;
+	margin-top: 3%;
+}
+.Fargepallet {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 75%;
+}
+
+#color {
+	width: 90%;
+	height: auto;
+	padding: 50px;
+}
+
+#Farge-text {
+	width: 350px;
+	margin-right: 50px;
+	align-self: center;
+}
+
+#Design-text {
+	text-align: center;
+	width: 800px;
+}
+
+.ReklameContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 5%;
+	margin-bottom: 3%;
+}
+.reklameTekst-Container {
+	display: flex;
+	flex-direction: column;
+}
+#reklameTekst {
+	width: 60%;
+	margin-left: 1%;
+}
+#reklameTittel {
+	font-size: 32px;
+	margin-left: 2%;
+}
+.reklameFilm {
+	display: flex;
+	flex-direction: column;
+}
+#reklame {
+	width: 70%;
+	border: 3px solid black;
+}
+
+/* Om Digistore */
+
+#omOss-tittel {
+	text-align: center;
+	font-size: 45px;
+	font-family: Cascadia code;
+	font-weight: bold;
+}
+
+.omDigistore-container {
+	display: flex;
+	flex-direction: row;
+	padding: 5%;
+	background-color: #D3D4D9;
+}
+
+.om-Digistore {
+	background-color: white;
+	border: 5px solid black;
+	margin: 2%;
+	padding: 1%;
+}
+
+#omDigistore-tittel {
+	text-decoration: 5px underline #ff0022;
+}
+
+#omDigistore-tekst {
+	font-size: 18px;
+}
+
+.comment-Container {
+	display: flex;
+	flex-direction: row;
+	margin: 2%;
+	justify-content: space-around;
+
+}
+
+.Comment{
+	display: flex;
+	flex-direction: column;
+	border: 5px solid black;
+	background-color: #252627;
+	width: 25%;
+
+}
+.commentHeader{
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+}
+
+#commentText{
+	color: #818181;
+	
+}
+#commentTitle{
+	margin-left: 5%;
+}
+
+#person{
+	width: 15%;
+	border-right: 2px solid #000000;
+	padding: 5px;
+}
+
+#Star{
+	width: 50%;
+	padding: 3%;
+	align-self: flex-end;
+}
+
+/* handlevogn */
+
+.shopping-container{
+	display: flex;
+	flex-direction: row;
+	margin-left: 4%;
+	margin-top: 5%;
+	margin-right: 4%;
+	align-items: center;
+	justify-content: space-around;
+	background-color:#D3D4D9;
+	border-radius: 10px;
+}
+
+#ShoppingTitle{
+	margin-left: 3%;
+	font-size: 35px;
+}
+
+#shopping-cart{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	
+}
+#cart{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	z-index: 3;	
+	border: 2px solid black;
+	background-color: white;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: 190%;
+	font-family: cascadia code;
+	font-weight: bold;
+}
+#cartProduct{
+	border: 1px solid black;
+	font-size: 30px;
+	align-self: left;
+}
+#empty-Cart{
+	background-color: #ff0022;
+	color: white;
+	border: 3px solid #bb0a21;
+	border-radius: 10px;
+	font-size: 20px;
+	text-align: center;
+	width: 200px;
+	height: 50px;
+	cursor: pointer;
+}
+#empty-Cart:hover {
+	background-color: #bb0a21;
+}
+.checkOut{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 5px solid black;
+	border-radius: 10px;
+	padding: 1%;
+	background-color: white;
+}
+#checkIn{
+	background-color: #ff0022;
+	color: white;
+	border: 3px solid #bb0a21;
+	border-radius: 10px;
+	font-size: 20px;
+	text-align: center;
+	width: 200px;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 10%;
+}
+#checkIn:hover {
+	background-color: #bb0a21;
+}
+#shopping_icon{
+	width: 110%;
+	height: auto;
+}
+
+/* Very Serious site */
+
+.seriousSite{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 6%;
+	
+}
+#perfectGif{
+	width: 50%;
+	height: auto;
+	border-radius: 10px;
+}
+#perfectText{
+	font-size: 35px;
+	text-decoration: 5px underline #ff0022;
+}

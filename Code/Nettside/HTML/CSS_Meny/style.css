@@ -1,0 +1,436 @@
+/* meny Bar */
+nav {
+  
+  width: 1280px;
+  height: 80px;
+  background-color: #8bbc9f;
+  border-radius: 8px;
+  font-size: 2;
+  position:fixed;
+  top: 0%;
+  z-index: 4;
+  
+}
+/* meny tekst */
+nav a {
+  height: 30px;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  
+}
+/* meny animation */
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+/* individuelle bokser for meny bar */
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 90px;
+}
+a:nth-child(4) {
+  width: 160px;
+}
+a:nth-child(5) {
+  width: 110px;
+}
+/* animation for individuelle bokser for meny bar */
+nav .start-home, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #84E490;
+}
+nav .start-about, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #84E490;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+  width: 160px;
+  left: 310px;
+  background-color: #84E490;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+  width: 120px;
+  left: 470px;
+  background-color: #84E490;
+}
+/* body, video og tekst */
+body {
+  font-size: 16px;
+  font-family: Arial, cursive;
+  background: #f0f0f0;
+}
+h1 {
+  text-align: center;
+  margin: 80px 0 40px;
+  font-size: 50px;
+  font-family: arial, cursive;
+  font-weight: "bold";
+}
+
+p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: arial,cursive;
+  font-size: 20px;
+}
+h2 {
+  text-align: center;
+  margin: 50px;
+  font-family: arial, cursive;
+  font-weight: "bold";
+}
+
+video {
+  margin-left: 20vw;
+  transform: translate(-50%);
+  margin-top: 100px;
+}
+#Reklamevideo {
+  margin-left: 90%;
+  transform: translate(-50%);
+  margin-top: 100px;
+}
+/* Darkmode */
+#toggledarkmode {
+  height: 70px;
+  z-index: 69420;
+}
+/* Startside */
+.video_intro{
+  margin-left: 22vw;
+  transform: translate(-50%);
+  margin-top: 250px;
+}
+.video_name{
+  text-align: left;
+}
+.contact {
+  text-align:left;
+}
+.home_title {
+  position: absolute;
+  top: 20%;
+  margin-left: 50px;
+  width: 100%;
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+}
+.home_text {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  margin-left: 50px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+}
+span {
+  color: #84E490;
+}
+/* About me */
+.aboutMe_title {
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 100px;
+  color: #84E490;
+}
+.aboutMe_container {
+  display:flex;
+  flex-direction:row;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #84E490;
+  width: 1300px;
+  margin-left: 40px;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  padding: 20px;
+
+}
+#aboutMe {
+  width: 500px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #84E490;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: auto;
+}
+#aboutMe_Image {
+  width: 500px;
+  margin-left: 150px;
+  align-self: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 0 rgb(144, 144, 144);
+}
+/* Designmanual */
+#Design_title {
+  text-align: left;
+  margin-left: 63px;
+  margin-top: 100px;
+  color: #84E490;
+}
+.Design_container {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: auto;
+  margin-left: 40px;
+  margin-top: 150px;
+  padding: 20px;  
+  border-color: #84E490;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 10px;
+
+}
+#Designmanual {
+  margin: 20px;
+  padding: 5px;
+  align-self: center;
+  font-family: arial,cursive;
+  font-size: 20px;
+  color: black;
+  width: 400px;
+}
+#Designmanual_img {
+  width: 200px;
+  height: auto;
+  margin-left: 50%;
+}
+#Design_Logo{
+  display: block;
+  margin-top: 100px;
+  margin: 20px;
+  margin-left: 50%;
+}
+/* Galleri */
+.galleri li {
+  display: inline;
+}
+.galleri a {
+  padding: 10px 20px;;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-width: 3px;
+  border-radius: 26px;
+  border-style: solid;
+  margin-top: 50px;
+}
+.galleri a:hover {
+  background-color: #222d37;
+  color:  #84E490;
+  text-align: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+  color:#84E490;
+}
+.oppdrag_container{
+  display:flex;
+  flex-direction:row;
+  /* flex-wrap: wrap; */
+  border-style: solid;
+  border-width: 4px;
+  border-color: #84E490;
+  width: 1300px;
+  margin-left: 40px;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+#Oppdrag1 {
+  width: 25%;
+  height: auto;
+  }
+  #Oppdrag2 {
+    width: 50%;
+  }
+  #Oppdrag3 {
+    width: 100%;
+  }
+  /* galleri innhold bokser */
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+  clear: both;
+}
+    
+.column {
+  float: left;
+  width: 25%;
+}
+#image_thumbnail{
+  width: 400px;
+  height: 250px;
+}
+/* The Modal (bakgrunn) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+  
+/* Modal innhold */
+.modal-content {
+  position: relative;
+  background-color: #222d37;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+  
+/* lukke knappen */
+.close {
+  color: white;
+  position: absolute;
+  top: 100px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Slides */
+.mySlides {
+  display: none;
+}
+
+#image_slider{
+  width: auto;
+  height: 400px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+    
+/* Neste & tilbake knapper */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -20px;
+  color:#84E490;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+    
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+    
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+    
+/* Number tekst (1/3 etc) */
+
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* bilde */
+#Digistore {
+  Width: 100%
+}
+img {
+  margin-bottom: -4px;
+}
+
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+    
+.demo {
+opacity: 0.6;
+width: 290px;
+height: 190px;
+}
+
+/* skygge */
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+    
+img.hover-shadow {
+  transition: 0.3s;
+}
+    
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

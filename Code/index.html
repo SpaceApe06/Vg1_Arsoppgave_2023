@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>DigiStore</title>
+        <link rel="icon" type="Image/x-icon" href="Images/icons/Logo/Logo_Favicon.svg">
+        <link href="CSS/style.css" rel="stylesheet" type="text/css">           
+    </head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"> <img id="navbar-logo" src="Images/icons/Logo/Digi_Store_Logo_alternativ.svg" alt="DigiStore"> </a>
+       
+        <div class="navbar-search">
+            <form action="/html/resultat.html">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit">Search</button>
+            </form>
+
+        </div>
+        <div class="navbar-menu">
+            <a href="/html/hehe.html"> <img id="navbar-icon" src="/Images/icons/Profile_icon.svg"> </a>
+            <a href="html/handlekurv.html"> <img id="navbar-icon" src="/Images/icons/shopping_icon/Handlekurv_white.svg" alt="Handlekurv"> </a>
+        </div>
+    </nav>
+
+<!-- image slider -->
+    <div>
+    <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+            <img src="/Images/Img/Produkt/plakat/Logitech_plakat.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="/Images/Img/Produkt/plakat/2_for_1_plakat.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="/Images/Img/Produkt/plakat/index.jpg" style="width:100%">
+            <div class="text">SACRIFICE FOR DIGISTORE :)</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>   
+    <h1 id="indexProdukter">Produkter</h1>
+<!-- produkter, henter innholdet fra en json fil gjennom javascrpt-->
+    <div class="produkt-container">
+    </div>
+
+    <!-- bunn nav -->
+
+    <nav class="bunn-Nav">
+        <div class="Links">
+            <div class="site-Links">
+                <h1 id="link-Tittel">Shortcuts</h1>
+                <a href="/index.html">Startsiden</a>
+                <a href="/html/handlekurv.html">Handlekurv</a>
+                <a href="/html/">brukersiden</a>
+            </div>
+            <div class="site-Links">
+                <h1 id="link-Tittel">About us</h1>
+                <a href="/html/om_oss.html">Om Digistore</a>
+                <a href="/Nettside/HTML/Galleri.html">Om Leverandør</a>
+                <a href="/html/design.html">Designmanual</a>
+            </div>
+            <div class="site-Links">
+                <h1 id="link-Tittel">Sosiale medier</h1>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https:/facebook.com/">Facebook</a>
+                <a href="https://Youtube.com/">Youtube</a>
+            </div>
+        </div>
+        <p id="copyright">©2023, Digistore AS</p>
+    </nav>
+
+<script src="Javascript/Slider.js"></script> 
+<script src="Javascript/produkter.js"></script> 
+</body>
+</html>

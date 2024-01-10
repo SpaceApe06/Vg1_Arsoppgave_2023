@@ -1,0 +1,29 @@
+nav{
+  background-color: #31404e;
+}
+body {
+  background-color: #222d37;
+  color: #ffffff;
+}
+a {
+  color: #84E490;
+  text-decoration: none;
+}
+.galleri a {
+  background-color: #222d37;
+  color: #ffffff;
+}
+.galleri a:hover {
+  background-color: #84E490;
+  color: #10151a;
+  text-align: center;
+}
+#aboutMe {
+    color: #84E490;
+}
+#aboutMe_Image {
+  box-shadow: 10px 10px 10px 0 black;
+}
+#Designmanual {
+  color: #ffffff;
+}

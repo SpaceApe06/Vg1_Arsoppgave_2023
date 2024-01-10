@@ -1,0 +1,75 @@
+{
+	"produkter": [
+		{
+			"name": "Logitech G502 Lightspeed",
+			"price": 1195,
+			"catergory": "gaming",
+			"img": "/Images/Img/Produkt/G502.jpg",
+			"info": "Gå til kamp med en helt ved din side. Med den trådløse Logitech G502 Lightspeed gamingmusen med opptil 25 600 DPI sensitivitet og 400 IPS-hastighet, lettvektig design, justerbar vekt og 11 programmerbare knapper blir dere en uslåelig duo."
+		},
+		
+		{
+			"name": "Meta Quest 2",
+			"price": 5895,
+			"catergory": "gaming",
+			"img": "/Images/Img/Produkt/quest_2.jpg",
+			"info": "Meta Quest 2 VR-briller gir mulighet for VR på farten, takket være en innebygd prosessor, 128 GB lagringsplass og fire monterte kameraer for bevegelsessporing. Dermed kan du spille og se videoer uten å bli begrenset av kabler."
+		},
+		{
+			"name": "Playstation 5 digital edition",
+			"price": 6000,
+			"catergory": "gaming",
+			"img": "/Images/Img/Produkt/PS5.jpg",
+			"info": "PlayStation 5 Digital Edition (PS5) gir deg tilgang til en nestegenerasjons gamingopplevelse med fotorealistisk strålesporende grafikk, nærmest umiddelbar innlastningstid og fengende 3D-lyd."
+		},
+		{
+			"name": "PS5 DualSense kontroller",
+			"price": 899,
+			"catergory": "gaming",
+			"img": "/Images/Img/Produkt/PS5_kontroller_red.jpg",
+			"info": "PS5 DualSense trådløs kontroller har et oppdatert vibrasjonssystem med haptisk tilbakemeldingsteknologi og adaptive triggere i R2- og L2-knappene som sikrer en mer nær og involverende spillopplevelse."
+		},
+		{
+			"name": "Steelseries Artics Pro",
+			"price": 3095,
+			"catergory": "gaming",
+			"img": "/Images/Img/Produkt/steelseries_arctis.jpg",
+			"info": "Bli en ekte proff med SteelSeries Arctis Pro gaming-headset. DTS Headphone:X 2.0 virtuell lyd gir deg mulighet til å fullstendig fordype deg i spillet og lokalisere fiender innen en radius på 360 grader med utmerket presisjon."
+		},
+		{
+			"name": "Canon EOS 850D DSLR kamera",
+			"price": 12395,
+			"catergory": "Foto",
+			"img": "/Images/Img/Produkt/Canon_1.jpg",
+			"info": "Ta vakre bilder og videoer fra eventyrene dine med Canon EOS 850D DSRL-kamera og 18-55 mm IS STM-objektiv. Kameraet med en 24,1 MP APS-C CMOS-sensor lar deg ta nydelige bilder eller imponerende 4K-videoer."
+		},
+		{
+			"name": "iPhone 14 Pro Max",
+			"price": 15290,
+			"catergory": "mobil",
+			"img": "/Images/Img/Produkt/iPhone_14.jpg",
+			"info": "iPhone 14 Pro. Helt nytt 48 MP hovedkamera for opptil 4x bedre oppløsning, og fire alternativer for zooming. Med Filmatisk modus kan du nå ta opp HDR-video i 4K med 24 bps. selve bransjestandarden i filmindustrien."
+		},
+		{
+			"name": "LG UQ75 4K LCD TV(2022)",
+			"price": 8490,
+			"catergory": "TV",
+			"img": "/Images/Img/Produkt/LG_tv.jpg",
+			"info": "LG UHD TV tilbyr en fantastisk bildeopplevelse med 4K-bilde, AI-basert lyd- og bildeforbedring. LGs anerkjente webOS gir deg ubegrenset tilgang til streaming, spill og underholdning."
+		},
+		{
+			"name": "Samsung Galaxy S23 Ultra",
+			"price": 16990,
+			"catergory": "mobil",
+			"img": "/Images/Img/Produkt/galaxy_S23.jpg",
+			"info": "Maksimal ytelse på farten, det er Samsung Galaxy S23 Ultra 5G smarttelefon. Den har en 6,8” Dynamic AMOLED 2X-skjerm med 120 Hz oppdateringsfrekvens, kraftig Snapdragon 8 Gen 2-prosesor og et 200 MP hovedkamera med ekstrem 100x Space-zoom."
+		},
+		{
+			"name": "Samsung AU7175 4k LED TV(2021)",
+			"price": 5490,
+			"catergory": "TV",
+			"img": "/Images/Img/Produkt/Samsung_tv_1.jpg",
+			"info": "Nyt skarpe detaljer og realistisk fargegjengivelse i sin reneste form med Samsung 55 AU7175 UHD 4K Smart-TV, som kan skilte med en kraftig 4K-prosessor, operativsystemet Tizen og PurColor som sikrer naturlig fargegjengivelse."
+		}
+	]
+}
